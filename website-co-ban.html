@@ -12,40 +12,46 @@
 
 </head>
 
-<body onload="checkCookie();">
+<body onload="checkCookie();onloadside();">
 
     <section id="navbar">
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <button id="navbar-toggler" class="btn btn-outline-secondary d-none d-lg-block" type="button"
+            <!-- <button id="navbar-toggler" class="btn btn-outline-secondary d-none d-lg-block" type="button"
                 onclick="openNav()">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo/logo-name_1.png" alt=""></a>
 
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" id="showdemo" data-toggle="modal"
-                    data-target="#exampleModal">
-                    Demo
-                </button>
-                <button id="navbar-toggler" class="btn btn-outline-secondary d-md-block d-lg-none" type="button"
-                    onclick="openNav()">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    onclick="openNav()" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link link-item" href="website-co-ban.html">Tổng Quan HTML/CSS, Javascript</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link-item" href="html-co-ban.html">HTML Cơ Bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="css-co-ban.html">CSS Cơ Bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="javascript-co-ban.html">Javascript Cơ Bản</a>
+                        </li>
+                    </ul>
+
+                </div>
         </nav>
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li>Bạn đang ở: &nbsp;</li>
-                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Tổng Quan HTML/CSS, Javascript</li>
-                </ol>
-            </nav>
-        </div>
         <div id="mySidenav" class="sidenav">
             <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
-            <a href="index.html">Trang Chủ</a>
+            <a class="link-item active" href="index.html">Trang Chủ</a>
             <a href="website-co-ban.html">Tổng Quan HTML/CSS, Javascript</a>
             <a href="html-co-ban.html">HTML Cơ Bản</a>
             <a href="css-co-ban.html">CSS Cơ Bản</a>
@@ -56,9 +62,16 @@
     <section id="content1">
         <div class="container">
             <div class="main-content1">
-                <h1 class="align-center fw-6">Nhập Môn HTML/CSS, Javascript</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li>Bạn đang ở: &nbsp;</li>
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tổng Quan HTML/CSS, Javascript</li>
+                    </ol>
+                </nav>
+                <h1 class="align-center p-t-3 fw-6">Nhập Môn HTML/CSS, Javascript</h1>
                 <div class="content-data">
-                    <h2>1. Giới thiệu chung</h2>
+                    <h3>1. Giới thiệu chung</h3>
                     <p class="fs-7 align-justify">- HTML được ví như là khung xương của 1 cô gái, CSS sẽ makeup cho cô
                         gái
                         thêm xinh đẹp,
@@ -75,70 +88,166 @@
                         <tab-3></tab-3>ví dụ: index.html, index.htm
                     </p>
                     <p class="fs-7 align-justify">
-                        - Những file này được chạy khi mở trên các trình duyệt như:
-                        <table class="table table-icon">
-                            <tbody>
-                                <tr>
-                                    <td><img class="img-icon" src="img/icon/chrome.webp" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/firefox-logo-300x310.png" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/Google-Chrome-Chromium-icon.png" alt="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Google Chrome</td>
-                                    <td>Mozila Firefox</td>
-                                    <td>Google Chromium</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="img-icon" src="img/icon/Internet_Explorer_9.png" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/microsoftedgenewlogo.jpg" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/768px-Cốc_Cốc_logo.svg.png" alt=""></td>
-                                </tr>
-                                <tr>
-                                    <td>Internet Explorer</td>
-                                    <td>Microsoft Edge</td>
-                                    <td>CốcCốc</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        - CSS được viết trong file có đuôi dạng <kbd>*.css</kbd>
+                        <br>
+                        <tab-3></tab-3>ví dụ: style.css
                     </p>
                     <p class="fs-7 align-justify">
-                        - Để tạo và chỉnh sửa HTML, ta thường dùng các phần mềm chỉnh sửa text( text editor) hoặc phần
+                        - Javascript được viết trong file có đuôi dạng <kbd>*.js</kbd>
+                        <br>
+                        <tab-3></tab-3>ví dụ: custom.js
+                    </p>
+                    <p class="fs-7 align-justify">
+                        - Những file này được chạy khi mở trên các trình duyệt như:
+                    <table class="table table-icon">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/chrome.webp);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/firefox-logo-300x310.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/Google-Chrome-Chromium-icon.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Google Chrome</td>
+                                <td>Mozila Firefox</td>
+                                <td>Google Chromium</td>
+                            </tr>
+                            <tr>
+                                <td style="align-items: center;">
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/Internet_Explorer_9.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/microsoftedgenewlogo.jpg);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/768px-Cốc_Cốc_logo.svg.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Internet Explorer</td>
+                                <td>Microsoft Edge</td>
+                                <td>CốcCốc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </p>
+                    <p class="fs-7 align-justify">
+                        - Để tạo và chỉnh sửa chúng, ta thường dùng các phần mềm chỉnh sửa text( text editor) hoặc phần
                         mềm phát triển ứng dụng (IDE).
                     </p>
                     <p class="fs-7 align-justify">
                         - Một số text editor và IDE phổ biến hiện nay:
                     </p>
-                    <p class="fs-7 align-center">
-                        <table class="table table-icon">
-                            <tbody>
-                                <tr>
-                                    <td><img class="img-icon" src="img/icon/visual.jpg" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/sublime.png" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/atom.png" alt="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Google Chrome</td>
-                                    <td>Mozila Firefox</td>
-                                    <td>Google Chromium</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="img-icon" src="img/icon/Internet_Explorer_9.png" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/microsoftedgenewlogo.jpg" alt=""></td>
-                                    <td><img class="img-icon" src="img/icon/768px-Cốc_Cốc_logo.svg.png" alt=""></td>
-                                </tr>
-                                <tr>
-                                    <td>Internet Explorer</td>
-                                    <td>Microsoft Edge</td>
-                                    <td>CốcCốc</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <p class="fs-7 align-justify">
+                    <table class="table table-icon">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/visual.jpg);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/sublime.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/atom.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Visual studio</td>
+                                <td>Sublime text</td>
+                                <td>Atom</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/notepad++.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/220px-Brackets_Icon.svg.png);margin: 0 auto;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img-icon"
+                                        style="background-image: url(img/icon/inteliji.jpg);margin: 0 auto;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Notepad++</td>
+                                <td>Brackets</td>
+                                <td>IDE Inteliji</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     </p>
                 </div>
+                <p class="fs-7 align-justify">Để được trực quan hơn, dưới đây là 1 ví dụ về HTML, CSS, JS</p>
+                <p class="fs-8 align-justify">Dưới đây là 1 ví dụ về HTML</p>
+                <div class="content-exam">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-12 card-code">
+                                    <p>Hãy điền dòng text này vào phần HTML: <kbd>
+                                            &lt;p&gt;Hello&lt;/p&gt;
+                                        </kbd></p>
+                                    <textarea id="html" style="overflow:hidden" placeholder="HTML"></textarea>
+                                </div>
+                                <div class="col-12 card-code">
+                                    <p>Sau đó điền dòng text này vào phần CSS: <kbd>
+                                            p{color:red;}
+                                        </kbd></p>
+                                    <textarea id="css" style="overflow:hidden" placeholder="CSS"></textarea>
+                                </div>
+                                <div class="col-12 card-code">
+                                    <p>Điền dòng text này vào phần Javascript: <kbd>
+                                            alert("hello");</kbd> trình duyệt sẽ đưa ra thông báo.</p>
+                                    <textarea id="js" style="overflow:hidden" placeholder="JavaScript"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <iframe id="code"></iframe>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="js/custom.js"></script>
+                </div>
+                <a href="html-co-ban.html" class="btn link-white m-t-2 btn-primary btn-block">Bài tiếp theo: HTML cơ bản</a>
             </div>
+            
         </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <p class="color-w align-center m-t-3 p-t-3">@2020 - Tran Duc Hoang</p>
+            <p class="color-w align-center">Thông tin chi tiết liên hệ qua Email: hoangtd1706@gmail.com</p>
+        </footer>
     </section>
 
 

@@ -1,10 +1,16 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.margin = "0 0px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.margin = "0 -250px";
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function onloadside() {
+    document.getElementById("mySidenav").style.marginLeft = "-250px";
 }
 
 
@@ -47,3 +53,27 @@ function removeCookie() {
     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 }
 
+function compile() {
+    var html = document.getElementById("html");
+    var css = document.getElementById("css");
+    var js = document.getElementById("js");
+    var code = document.getElementById("code").contentWindow.document;
+
+    document.body.onkeyup = function () {
+        code.open();
+        code.writeln(html.value + "<style>" + css.value + "</style>" + "<script>" + js.value + "</script>");
+        code.close();
+    };
+}
+
+function runcode() {
+    var html = document.getElementById("html");
+    var css = document.getElementById("css");
+    var js = document.getElementById("js");
+    var code = document.getElementById("code").contentWindow.document;  
+    code.open();
+    code.writeln(html.value + "<style>" + css.value + "</style>" + "<script>" + js.value + "</script>");
+    code.close();
+}
+
+compile();

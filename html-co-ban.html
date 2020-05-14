@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="icon short-cut" href="img/icon/icon.png">
     <title>Elearning By Hoang</title>
 
@@ -38,7 +39,7 @@
                 <ol class="breadcrumb">
                     <li>Bạn đang ở: &nbsp;</li>
                     <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">HTML cơ bản</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tổng Quan HTML/CSS, Javascript</li>
                 </ol>
             </nav>
         </div>
@@ -50,6 +51,147 @@
             <a href="css-co-ban.html">CSS Cơ Bản</a>
             <a href="javascript-co-ban.html">Javascript Cơ Bản</a>
         </div>
+    </section>
+
+    <section id="content1">
+        <div class="container">
+            <div class="main-content1">
+                <h1 class="align-center p-t-3 fw-6">Nhập Môn HTML/CSS, Javascript</h1>
+                <div class="content-data">
+                    <h3 class="m-t-2">
+                        1. Cấu trúc cơ bản của một file HTML.
+                    </h3>
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-l-3 d-block d-md-none">
+                            <pre class="code-demo"><code class="fs-8" style="width: 100%;">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        // Nội dung trang web
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code>
+                        </pre>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="fs-8 align-justify">
+                                <kbd>&lt;!Doctype&gt;</kbd> chỉ cho trình duyệt web biết được phiên bản ngôn ngữ HTML
+                                hay
+                                xHTML.
+                            </p>
+                            <p class="fs-8 align-justify">
+                                <kbd>&lt;html&gt;...&lt;/html&gt;</kbd> bọc tất cả các phần bao gồm đường dẫn, nội
+                                dung,... của trang web
+                            </p>
+                            <p class="fs-8 align-justify">
+                                <kbd>&lt;head&gt;...&lt;/head&gt;</kbd> Phần khai báo ban đầu, khai báo về meta, title,
+                                css,
+                                javascript…
+                            </p>
+                            <p class="fs-8 align-justify">
+
+                                <kbd>&lt;body&gt;...&lt;/body&gt;</kbd> Phần chứa nội dung của trang web, nơi hiển thị
+                                nội
+                                dung.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 d-none d-md-block">
+                            <pre class="code-demo"><code class="fs-8 m-l-3">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        // Nội dung trang web
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code>
+                        </pre>
+                        </div>
+                    </div>
+                    <h3>2. Các thẻ cơ bản trong HTML.</h3>
+                    <h5>2.1. Thẻ biểu diễn đoạn văn trong HTML - Thẻ <kbd>&lt;p&gt;&lt;/p&gt;</kbd> trong HTML</h5>
+                    <p class="fs-8 align-justify">Thẻ <kbd>&lt;p&gt;</kbd> với p là viết tắt của Paragraph. Giúp cấu
+                        trúc văn bản thành các đoạn văn khác nhau trong HTML.</p>
+                    <p class="fs-8 align-justify m-b-0">Dưới đây là 1 ví dụ về thẻ <kbd>&lt;p&gt;</kbd></p>
+                    <pre class="code-demo p-b-2"><code class="fs-10 m-l-3">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Day la doan van thu nhat.&lt;/p&gt;
+        &lt;p&gt;Day la doan van thu hai.&lt;/p&gt;
+        &lt;p&gt;Day la doan van thu ba.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+                    <p class="fs-8 align-justify m-b-0">
+                        Kết quả:
+                    </p>
+                    <div class="result">
+                        <p>Day la doan van thu nhat.</p>
+                        <p>Day la doan van thu hai.</p>
+                        <p>Day la doan van thu ba.</p>
+                    </div>
+                    <h5 class="m-t-2">2.2. Thẻ ngắt dòng trong HTML - Thẻ <kbd>&lt;br&gt;</kbd> trong HTML</h5>
+                    <pre class="code-demo p-b-2"><code class="fs-10 m-l-3">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Day la doan van thu nhat.&lt;br&gt;
+        Day la doan van thu hai.&lt;br&gt;
+        Day la doan van thu ba.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                    </code></pre>
+                    <p class="fs-8 align-justify m-b-0">
+                        Kết quả:
+                    </p>
+                    <div class="result">
+                        <p>Day la doan van thu nhat.<br>Day la doan van thu hai.<br>Day la doan van thu ba.</p>
+                    </div>
+                    <h5 class="m-t-2">2.3. Các thẻ cơ bản khác.</h5>
+                    <p>- Thẻ <kbd>&lt;hr/&gt;</kbd> tạo 1 đường kẻ ngắt dòng.</p>
+                    <p>- Thẻ <kbd>&lt;center&gt;...&lt;/center&gt;</kbd> căn giữa nội dung.</p>
+                    <p>- Thẻ <kbd>&lt;pre&gt;...&lt;/pre&gt;</kbd> giữ nguyên định dạng văn bản khi bạn muốn chúng hiển
+                        thị như những gì bạn đã viết.</p>
+                    <p class="fs-7 m-t-3 m-b-0">Bạn muốn thử ngay chứ</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                                <div class="col-12 card-code">
+                                    <textarea id="html" style="overflow:hidden" placeholder="HTML"></textarea>
+                                </div>
+                                <div class="col-12 card-code">
+                                    <textarea id="css" style="overflow:hidden" placeholder="CSS"></textarea>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <iframe id="code"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <p class="color-w align-center m-t-3 p-t-3">@2020 - Tran Duc Hoang</p>
+            <p class="color-w align-center">Thông tin chi tiết liên hệ qua Email: hoangtd1706@gmail.com</p>
+        </footer>
     </section>
 
     <!-- Modal -->

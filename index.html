@@ -6,37 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="icon short-cut" href="img/icon/icon.png">
     <title>Elearning By Hoang</title>
 
 </head>
 
 <body onload="checkCookie();">
-
     <section id="navbar">
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <button id="navbar-toggler" class="btn btn-outline-secondary d-none d-lg-block" type="button"
+            <!-- <button id="navbar-toggler" class="btn btn-outline-secondary d-none d-lg-block" type="button"
                 onclick="openNav()">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo/logo-name_1.png" alt=""></a>
 
-                <!-- Button trigger modal -->
-                <button id="navbar-toggler" class="btn btn-outline-secondary d-md-block d-lg-none" type="button"
-                    onclick="openNav()">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    onclick="openNav()" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link link-item active" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="website-co-ban.html">Tổng Quan HTML/CSS, Javascript</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link-item" href="html-co-ban.html">HTML Cơ Bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="css-co-ban.html">CSS Cơ Bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="javascript-co-ban.html">Javascript Cơ Bản</a>
+                        </li>
+                    </ul>
+
+                </div>
         </nav>
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li>Bạn đang ở: &nbsp;</li>
-                    <li class="breadcrumb-item active"><a href="index.html">Trang chủ</a></li>
-                </ol>
-            </nav>
-        </div>
         <div id="mySidenav" class="sidenav">
             <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
             <a class="link-item active" href="index.html">Trang Chủ</a>
@@ -47,6 +58,28 @@
         </div>
     </section>
 
+    <section id="content-1">
+        <div class="container ">
+            <h2 class="text-center d-none d-md-block">Bạn muốn tìm hiểu về web cơ bản. Bạn đến đúng nơi rồi đấy. Vậy bạn đã biết HTML, CSS
+                và Javascript là gì chưa. Nếu biết rồi thì vào đi thôi.<br>
+                <a name="" id="" class="btn btn-primary" href="website-co-ban.html" role="button">Vào ở đây</a>
+            </h2>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center">Bạn muốn tìm hiểu về web cơ bản. Bạn đến đúng nơi rồi đấy. Vậy bạn đã biết HTML, CSS
+                và Javascript là gì chưa. Nếu biết rồi thì vào đi thôi.<br>
+                <a name="" id="" class="btn btn-primary" href="website-co-ban.html" role="button">Vào ở đây</a>
+            </h2>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <p class="color-w align-center p-t-3">@2020 - Tran Duc Hoang</p>
+            <p class="color-w m-b-0 align-center">Thông tin chi tiết liên hệ qua Email: hoangtd1706@gmail.com</p>
+        </footer>
+    </section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
