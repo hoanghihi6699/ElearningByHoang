@@ -1,0 +1,138 @@
+/*font-family: 'Lobster', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Baloo Tamma 2', cursive;
+font-family: 'Baloo Bhaina 2', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@wght@400;500;600;700&display=swap");
+
+* {
+    font-family: "Baloo Bhaina 2", cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+/* ****style**** */
+
+.tagHightlight {
+    background-color: #bbbbbbcc;
+    padding: 4px 10px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+kbd {
+    padding: 0.3rem 0.6rem;
+}
+
+.img-icon {
+    height: 80px;
+}
+
+.table-icon {
+    text-align: center;
+}
+.table-icon td {
+    border: none;
+}
+
+/************/
+
+.navbar .navbar-brand .logo {
+    height: 60px;
+}
+
+.navbar {
+    z-index: 99;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    border-bottom: 1px solid #555;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    outline: 0;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*Main*/
+
+.button-menu {
+    cursor: pointer;
+}
+
+#navbar-toggler {
+    position: absolute;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+}
+
+/* Content1 */
+#content1 .main-content1 {
+    background-color: white;
+    padding-top: 30px;
+    border-radius: 6px;
+    padding: 0 15px;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon short-cut" href="img/icon/icon.png">
+    <title>Elearning By Hoang</title>
+
+</head>
+
+<body onload="checkCookie();">
+
+    <section id="navbar">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <button id="navbar-toggler" class="btn btn-outline-secondary d-none d-lg-block" type="button"
+                onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo/logo-name_1.png" alt=""></a>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" id="showdemo" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Demo
+                </button>
+                <button id="navbar-toggler" class="btn btn-outline-secondary d-md-block d-lg-none" type="button"
+                    onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li>Bạn đang ở: &nbsp;</li>
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tổng Quan HTML/CSS, Javascript</li>
+                </ol>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
+            <a href="index.html">Trang Chủ</a>
+            <a href="website-co-ban.html">Tổng Quan HTML/CSS, Javascript</a>
+            <a href="html-co-ban.html">HTML Cơ Bản</a>
+            <a href="css-co-ban.html">CSS Cơ Bản</a>
+            <a href="javascript-co-ban.html">Javascript Cơ Bản</a>
+        </div>
+    </section>
+
+    <section id="content1">
+        <div class="container">
+            <div class="main-content1">
+                <h1 class="align-center fw-6">Nhập Môn HTML/CSS, Javascript</h1>
+                <div class="content-data">
+                    <h2>1. Giới thiệu chung</h2>
+                    <p class="fs-7 align-justify">- HTML được ví như là khung xương của 1 cô gái, CSS sẽ makeup cho cô
+                        gái
+                        thêm xinh đẹp,
+                        Javascript trang bị cho cô gái những cử chỉ hành động.</p>
+                    <p class="fs-7 align-justify">
+                        - HTML là ngôn ngữ đánh dấu siêu văn bản, được tổ chức theo các <kbd data-toggle="tooltip"
+                            data-placement="top" title="Tag: Thẻ đánh dấu văn bảng trong HTML">thẻ</kbd>, kết hợp với
+                        CSS và
+                        Javascript để thiết kế Website.
+                    </p>
+                    <p class="fs-7 align-justify">
+                        - HTML được viết trong file có đuôi dạng <kbd>*.html</kbd> hoặc <kbd>*.htm</kbd>
+                        <br>
+                        <tab-3></tab-3>ví dụ: index.html, index.htm
+                    </p>
+                    <p class="fs-7 align-justify">
+                        - Những file này được chạy khi mở trên các trình duyệt như:
+                        <table class="table table-icon">
+                            <tbody>
+                                <tr>
+                                    <td><img class="img-icon" src="img/icon/chrome.webp" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/firefox-logo-300x310.png" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/Google-Chrome-Chromium-icon.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Google Chrome</td>
+                                    <td>Mozila Firefox</td>
+                                    <td>Google Chromium</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="img-icon" src="img/icon/Internet_Explorer_9.png" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/microsoftedgenewlogo.jpg" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/768px-Cốc_Cốc_logo.svg.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Internet Explorer</td>
+                                    <td>Microsoft Edge</td>
+                                    <td>CốcCốc</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p class="fs-7 align-justify">
+                        - Để tạo và chỉnh sửa HTML, ta thường dùng các phần mềm chỉnh sửa text( text editor) hoặc phần
+                        mềm phát triển ứng dụng (IDE).
+                    </p>
+                    <p class="fs-7 align-justify">
+                        - Một số text editor và IDE phổ biến hiện nay:
+                    </p>
+                    <p class="fs-7 align-center">
+                        <table class="table table-icon">
+                            <tbody>
+                                <tr>
+                                    <td><img class="img-icon" src="img/icon/visual.jpg" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/sublime.png" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/atom.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Google Chrome</td>
+                                    <td>Mozila Firefox</td>
+                                    <td>Google Chromium</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="img-icon" src="img/icon/Internet_Explorer_9.png" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/microsoftedgenewlogo.jpg" alt=""></td>
+                                    <td><img class="img-icon" src="img/icon/768px-Cốc_Cốc_logo.svg.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Internet Explorer</td>
+                                    <td>Microsoft Edge</td>
+                                    <td>CốcCốc</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hướng Dẫn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <button onclick="removeCookie();">remove</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Bỏ đi khó hiểu quá</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

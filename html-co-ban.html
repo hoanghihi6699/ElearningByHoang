@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon short-cut" href="img/icon/icon.png">
+    <title>Elearning By Hoang</title>
+
+</head>
+
+<body onload="checkCookie();">
+
+    <section id="navbar">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <button id="navbar-toggler" class="btn btn-outline-secondary d-none d-lg-block" type="button"
+                onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo/logo-name_1.png" alt=""></a>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" id="showdemo" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Demo
+                </button>
+                <button id="navbar-toggler" class="btn btn-outline-secondary d-md-block d-lg-none" type="button"
+                    onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li>Bạn đang ở: &nbsp;</li>
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">HTML cơ bản</li>
+                </ol>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
+            <a href="index.html">Trang Chủ</a>
+            <a href="website-co-ban.html">Tổng Quan HTML/CSS, Javascript</a>
+            <a href="html-co-ban.html">HTML Cơ Bản</a>
+            <a href="css-co-ban.html">CSS Cơ Bản</a>
+            <a href="javascript-co-ban.html">Javascript Cơ Bản</a>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hướng Dẫn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <button onclick="removeCookie();">remove</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Bỏ đi khó hiểu quá</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
